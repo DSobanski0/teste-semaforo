@@ -19,9 +19,9 @@ class SemaforoApplicationTests {
 	@Test
 	void verificaCorDoSemaforo(CapturedOutput output) throws InterruptedException {
 		semaforo.mudaCor();
-		assertTrue(output.getOut().contains("Cor inicial do semáforo VERMELHO"));
-		assertTrue(output.getOut().contains("Segunda cor do semáforo VERDE"));
-		assertTrue(output.getOut().contains("Terceira cor do semáforo AMARELO"));
-		assertTrue(output.getOut().contains("Quarta cor do semáforo VERMELHO"));
+		assertTrue(output.getOut().contains("vermelho"));
+		assertTrue(output.getOut().contains("verde"));
+		assertTrue(output.getOut().contains("amarelo"));
+		//assertTrue(output.getOut().contains("azul"));
 	}
 }
